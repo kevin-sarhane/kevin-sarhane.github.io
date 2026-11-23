@@ -17,7 +17,7 @@ Open `index.html` in a browser. The Google Fonts import uses a network connectio
 ## Personalize before publishing
 
 - Review the public email address and LinkedIn link in the contact section.
-- The contact form opens the visitor’s default email app with the form details addressed to your public email; GitHub Pages does not process or store form submissions.
+- The contact form opens a prefilled Gmail draft addressed to your public email; the visitor reviews and sends it in Gmail. GitHub Pages does not process or store form submissions.
 - The project section includes the provided prototype photo at `assets/pizza-delivery-car.png`.
 - To add a portrait later, save it as `assets/kevin-sarhane.jpg` and remove `hidden` from the portrait image inside the `about-portrait` figure in `index.html`. It will appear beside your introduction in the About section.
 - Check dates, course titles, and project contributions against your records.
