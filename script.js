@@ -16,7 +16,15 @@ contactForm.addEventListener('submit', (event) => {
   const subject = formData.get('subject').trim() || `Portfolio message from ${name}`;
   const message = formData.get('message').trim();
   const body = `Name: ${name}\nEmail: ${senderEmail}\n\n${message}`;
-  window.location.href = `mailto:kevin.sarhane@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailDraft = new URL('https://mail.google.com/mail/');
+  gmailDraft.search = new URLSearchParams({
+    view: 'cm',
+    fs: '1',
+    to: 'kevin.sarhane@gmail.com',
+    su: subject,
+    body,
+  }).toString();
+  window.open(gmailDraft.toString(), '_blank', 'noopener,noreferrer');
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
