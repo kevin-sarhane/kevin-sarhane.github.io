@@ -9,7 +9,7 @@ Open `index.html` in a browser. The Google Fonts import uses a network connectio
 ## Publish with GitHub Pages
 
 1. Create a GitHub repository for the site. For a personal site, name it `YOUR-USERNAME.github.io`; a regular repository also works as a project site.
-2. Add `index.html`, `styles.css`, `script.js`, and this README to the repository's root directory.
+2. Add `index.html`, `styles.css`, `script.js`, this README, and the entire `assets` folder to the repository's root directory.
 3. In the repository, open **Settings → Pages**.
 4. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
 5. GitHub will show the published URL in the Pages settings after deployment.
@@ -17,8 +17,9 @@ Open `index.html` in a browser. The Google Fonts import uses a network connectio
 ## Personalize before publishing
 
 - Review the public email address and LinkedIn link in the contact section.
-- Replace the conceptual project illustration with real project photos or drawings when available. The current drawing is explicitly illustrative.
-- To add a portrait later, save it as `assets/kevin-sarhane.jpg`, remove `hidden` from the `.hero-photo` image in `index.html`, and add `has-photo` to the `hero-art` div. The artwork will give way to your photo.
+- The contact form opens the visitor’s default email app with the form details addressed to your public email; GitHub Pages does not process or store form submissions.
+- The project section includes the provided prototype photo at `assets/pizza-delivery-car.png`.
+- To add a portrait later, save it as `assets/kevin-sarhane.jpg` and remove `hidden` from the portrait image inside the `about-portrait` figure in `index.html`. It will appear beside your introduction in the About section.
 - Check dates, course titles, and project contributions against your records.
 
 ## Files
